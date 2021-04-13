@@ -21,15 +21,49 @@ nav a {
   color: #f5fffa;
 }
 
+a:hover {
+    background-color:#ffffff;
+    color: black;
+  }
 
 /*Index Page Heading Styling*/
 
-    .summary-text {
-  color: #F5FFFA;
+.headingindex {
+    font-family: lato;
+    font-style: italic;
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+
+}.summaryindex {
+    font-family: Lato;
+    font-style: normal; 
+    font-weight: lighter;
+    color:#ffffff;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX();
+    transform: translateY();
+
+
 }
-    .headline {
-    color: #F5FFFA;
- }
+
+
+
+
 
 /*Media Query change under 768 */
 
@@ -39,7 +73,8 @@ nav a {
     footer { font-size: 80%;}
     blog-heading {font-size: 1em; }
     blog-heading {text-align: center;}
-
+    .summaryindex {font-size: 1em;}
+    .headingindex{font-size: 5em;}
 }
 
 /*Media Query change under 480 */
@@ -50,6 +85,8 @@ nav a {
     footer { font-size: 60%;}
     blog-heading {font: size 1em;}
     blog-heading {text-align: center;}
+    .summaryindex {font-size: 0.9em;}
+    .headingindex{font-size: 3em;}
     }
 
 
@@ -76,7 +113,7 @@ nav a {
         49%{    color: #747474 ;}
         60%{    color: transparent;}
         85%{    color: transparent ;}
-        100%{   color: #00ff22 ;}
+        100%{   color: #444444 ;}
 }
 
 /*Footer styling*/
@@ -114,11 +151,13 @@ nav a {
         margin: 20px;
         width: auto;
         height: auto;
+        flex: 1;
     }
     
     .blog-heading {
         font-family: roboto;
         font-size: 2em;
         color: green;
+        flex: 1;
  }
 
