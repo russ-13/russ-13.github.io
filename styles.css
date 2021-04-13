@@ -8,11 +8,37 @@ nav {
         
 }
 
+/*Navbar link styles*/
+
+nav a {
+  font-family: roboto;
+  font-size: 2em;
+  flex: 1;
+  text-align: center;
+  margin: 0.25em;
+  padding: 0.25em;
+  text-decoration: none;
+  color: #f5fffa;
+}
+
+
+/*Index Page Heading Styling*/
+
+    .summary-text {
+  color: #F5FFFA;
+}
+    .headline {
+    color: #F5FFFA;
+ }
+
 /*Media Query change under 768 */
 
 @media only screen and (max-width: 768px) {
     nav { flex-direction: row; }
     nav { font-size: 50%; }
+    footer { font-size: 80%;}
+    blog-heading {font-size: 1em; }
+    blog-heading {text-align: center;}
 
 }
 
@@ -22,30 +48,20 @@ nav {
     nav { flex-direction: column; }
     nav { font-size: 40%; }
     footer { font-size: 60%;}
+    blog-heading {font: size 1em;}
+    blog-heading {text-align: center;}
     }
 
 
-/*Navbar link styles*/
-
-nav a {
-    font-family: roboto;
-    font-size: 2em;
-    flex: 1;
-    text-align: center;
-    margin: 0.25em;
-    padding: 0.25em;
-    text-decoration: none;
-    color: whitesmoke;
-}
 
 /*Body Styles*/
 
   body {
-          background-color: #1b2021;
+          background-color: #222;
 
 }
 
-/*Cursor blink selector*/
+/*Cursor blinking*/
 
     #blink{
         animation:blinkingText 1.2s infinite;
@@ -63,6 +79,8 @@ nav a {
         100%{   color: #00ff22 ;}
 }
 
+/*Footer styling*/
+
 
     footer {
         padding: 10px 10px 10px 10px;
@@ -74,3 +92,33 @@ nav a {
        
         text-align:right;
     }
+
+
+/* Blog Flex container */
+
+    .blog-container {
+        background: #222;
+        color: white;
+        padding: 20px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+/*Blog flex items*/
+
+    div {
+        background-color: rgb(61, 61, 61);
+        border-radius: 10px;
+        margin: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+    .blog-heading {
+        font-family: roboto;
+        font-size: 2em;
+        color: green;
+ }
+
