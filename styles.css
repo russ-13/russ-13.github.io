@@ -1,70 +1,67 @@
-/* Navbar bar style, flex setup*/
+/* Navbar bar style, flex setup--------------------------------------------------------------------------*/
 
 nav {
     display: flex;
-    flex-direction: row;
-    font-size: 80%;
-        
+    flex-direction: column;
+    background-color: black;
+
 }
 
 /*Navbar link styles*/
 
 nav a {
   font-family: roboto;
-  font-size: 2em;
+  font-size: 1.25em;
   flex: 1;
   text-align: center;
-  margin: 0.25em;
-  padding: 0.25em;
+  padding: 0.3em;
   text-decoration: none;
   color: #f5fffa;
+  margin: 00px 30px 00px 30px;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  text-align: center;
+  /* background-clip: padding-box; */
+
+  
 }
 
+nav a:hover {
 
-/*Body Styles*/
-
-body {
-  background-color: #82b7d6;
-    font-family: roboto;
-    text-align: center;
-    font-weight: bolder;
-}
-
-
-
-/*Index Page Heading Styling*/
-
-    .summary-text {
-  color: #F5FFFA;
-}
-    .headline {
-    color: #F5FFFA;
+   color: white;
+   border-bottom: 5px solid #ffffff;
  }
 
-/*Media Query change under 768 */
 
-@media only screen and (max-width: 768px) {
-    nav { flex-direction: row; }
-    nav { font-size: 50%; }
-    footer { font-size: 80%;}
-    blog-heading {font-size: 1em; }
-    blog-heading {text-align: center;}
+
+/*Body -------------------------------------------------------------------------------------------------*/
+
+body {
+    background-image: url("/Images/back.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: auto;
+    background-color: #525252;
+    font-family: roboto;
+    text-align: center;
+    font-weight: lighter;
 
 }
 
-/*Media Query change under 480 */
+/*Media Query change under 1024 (Tablet)------------------------------------------------------------- */
 
-@media only screen and (max-width: 480px) {
-    nav { flex-direction: column; }
-    nav { font-size: 40%; }
-    footer { font-size: 60%;}
-    blog-heading {font: size 1em;}
-    blog-heading {text-align: center;}
-    }
+@media only screen and (min-width: 1024px) {
+    nav a { font-size: 200%; }
 
+}
 
+/*Media Query change under 769 (Mobile) */
 
-/*Cursor blinking*/
+@media only screen and (min-width: 768px) {
+    nav { flex-direction: row; }
+    
+}
+
+/*Cursor blinking effect---------------------------------------------------------------------------*/
 
     #blink{
         animation:blinkingText 1.2s infinite;
@@ -82,21 +79,20 @@ body {
         100%{   color: #000000 ;}
 }
 
-/*Footer styling*/
-
-
-    footer {
-        padding: 10px 10px 10px 10px;
-        color: #ffffff;
-        font-family: Roboto;
-        position: fixed;
-        width: 90%;
-        bottom: 0;
-       
-        text-align:right;
+/*Footer styling---------------------------------------------------------------------------------*/
+    .footer {
+      z-index: 2;
+      background-color: #525252;
+      position: fixed;
+      color: #ffffff;
+      bottom: 0;
+      width: 99%;
+      height: 20px;
+      text-align: center;
+     
     }
 
-/*about me page*/
+/*about me page----------------------------------------------------------------------------------*/
 
 .about-flex-container{
     display: flex;
@@ -121,6 +117,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 1em;
+    margin: 0% 15% 0% 15%;
 }
 
   .about-heading {
@@ -137,23 +134,19 @@ body {
     border:rgb(0, 0, 0);
     color: #000000;
     text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 10px;
+    border-radius: 40px;
 
 }
 
-.contactbutton :hover{
-  background-color: #000;
-  color: #ffffff;
-}
 
+
+/*Index Page Text Styles-----------------------------------------------------------*/
 
 .headinglarge {
     font-family: lato;
     font-style: italic;
-    font-weight: bolder;
     color: #ffffff;
-    font-size: 6em;
+    font-size: 4em;
     text-align: center;
     
 }
@@ -163,7 +156,7 @@ body {
   font-style: italic;
   font-weight: bolder;
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   
 }
@@ -172,15 +165,32 @@ body {
     font-family: Lato;
     font-style: normal; 
     color:#ffffff;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align:center;
+
 }
 
 
-/*Contact Form*/
+/*Contact Form--------------------------------------------------------------*/
+
+/*Contact link flexbox*/
+
+.contact-link-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 150px;
+  padding: 15px 15% 15px 15%;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  align-items: center;
+}
 
   /*text"*/
-  input[type=text], select, textarea {
+    input[type=text], select, textarea {
     width: 100%; 
     padding: 10px; 
     border: 1px solid #ccc;
@@ -192,7 +202,7 @@ body {
   }
   
   /*submit button*/
-  input[type=submit] {
+    input[type=submit] {
     background-color: #adadad;
     color: rgb(2, 2, 2);
     padding: 20px 20px;
@@ -216,11 +226,68 @@ body {
       color: #ffffff;
       font-family: roboto;
       text-align: center;
-      width: auto;
-      margin: 5% 15% 15% 15%;
+      width: 100%;
+      margin: 0% 15% 5% 15%;
       padding:10px 10px 10px 10px;
-      border: 2px transparent;
-      border-radius:10px;
-      background-color: #a1cae2;
+      border-radius:30px;
+      background-color: #171516;
       padding: 20px;
   } 
+
+    .contactheading {
+      padding: 25px;
+      font-family: roboto;
+      color: #ffffff;
+  }  
+/*social media links-------------------------------------------------------------------*/
+    .externallogo {
+      width: 80px;
+      height: 80px;
+
+        }
+    
+/* Portfolio Page------------------------------------------------------------------*/
+
+    .portfolio-flex-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-top: 10px;
+     
+    }
+    
+    .skill-flex-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+    }
+    .external-link-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        padding: 15px 20px 20px 20px;
+      }
+      .external-link-logos {
+        padding: 15px 20px 20px 20px;
+      }
+      .externallogostatic {
+        height: 90px;
+        padding-bottom: 20px;
+        
+    }
+      .nolink{
+        color: #ffffff;
+      }
+
+
+
+
+
+
+
