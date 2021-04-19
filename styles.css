@@ -1,3 +1,31 @@
+/* Blog page CSS Grid */
+
+.Blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 25px;
+  }
+
+  .blog-photo {
+    width: 100%;
+  }
+  
+  .blogitem {
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    background: #8cdff0;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 4px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    color: #222;
+  }
+
+
+
 /* Navbar bar style, flex setup--------------------------------------------------------------------------*/
 
 nav {
@@ -6,7 +34,8 @@ nav {
   background-color: #bdc7c9;
 
   width: 100%;
-  border: 3px solid;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
   
 }
 
@@ -105,6 +134,9 @@ body {
 
 .about-text {
   font-family: roboto;
+  border: 2px solid;
+  border-radius: 6px;
+  background-color: #8cdff0 ;
   color: #222;
   text-align: center;
   font-size: 1em;
@@ -114,6 +146,7 @@ body {
 .about-heading {
   font-family: roboto;
   color: #222;
+  font-weight: lighter;
   text-align: center;
   font-size: 2em;
 }
@@ -129,38 +162,43 @@ body {
 
 }
 
-
-
 /*Index Page Text Styles----------------------------------------------------------------------*/
 
-.headinglarge {
+  .indexflex {
+    display: flex;
+    height:auto;
+    flex-direction: column;
+
+  }
+
+.headinglarge{
+
   font-family: lato;
   font-style: italic;
-  color: #ffffff;
-  font-size: 4em;
+  color: #222;
+  font-size: 2em;
   text-align: center;
+  margin-left: 15% ;
+  margin-right: 15% ;
+  border: 2px solid;
+  border-radius: 6px;
+  background-color: #8cdff0 ;
   
-}
-
-.resumetext {
-font-family: lato;
-font-style: italic;
-font-weight: bolder;
-color: #ffffff;
-font-size: 2em;
-text-align: center;
-
 }
 
 .headingsmall {
   font-family: Lato;
   font-style: normal; 
-  color:#ffffff;
+  color:#222;
+  margin-left: 15% ;
+  margin-right: 15%;
   font-size: 1em;
   text-align:center;
+  border: 2px solid;
+  border-radius: 6px;
+  background-color: #8cdff0 ;
 
 }
-
 
 /*Contact Form---------------------------------------------------------------------------------*/
 
@@ -282,21 +320,6 @@ align-items: center;
     .nolink{
       color: #ffffff;
     }
-
-  
-  /*blog posts*/
-  
-  
-  .blog-container1{
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid;
-  border-radius: 6px;
-  border-color: #222;
-  margin: 20px;
-  }
-  
-
   
 /*Media Query change over 768 (tablet) */
 
@@ -314,6 +337,11 @@ align-items: center;
 
   }
   
+  .headinglarge {
+    font-size: 4em;
+
+  }
+
 }
 
 /*Media Query change over 1024 (desktop)------------------------------------------------------------- */
@@ -325,4 +353,9 @@ align-items: center;
     height: 100px;
 
   }
+
+  .headinglarge {
+    font-size: 6em ;
+  } 
+
 }
