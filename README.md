@@ -21,8 +21,9 @@
 
     5. Contact page features a working form to submit to me and messages or queries clients or employers might have, and also contains links to my social media accounts and email adress.
 
-    6. All pages feature a footer with my copyright information and a resonsive navbar. The navbar will 
-1
+    6. All pages feature a footer with my copyright information and a resonsive navbar. The navbar is using flexbox and will reduce to row view when viewed on a mobile phone. 
+
+1. My Sitemap can be acessed here  
 
 1.
 
