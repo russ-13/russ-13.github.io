@@ -139,6 +139,7 @@ body {
   color: #222;
   text-align: center;
   font-size: 1em;
+  padding: 20px;
   margin: 0% 5% 0% 5%;
 }
 
@@ -212,7 +213,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: space-around;
-height: 150px;
+height: auto;
 padding: 5px 15% 15px 15%;
 margin-bottom: 40px;
 margin-left: 100px;
